@@ -4,13 +4,20 @@ public class Libro {
     private String autor;
     private int paginas;
     private String titulo;
-    private String fecha;
+    private String descripcion;
+    private String fechaDePub;
+    private String categoria;
+    private String idioma;
 
-    public Libro(String autor, int paginas, String titulo, String fecha) {
+    public Libro(int id, int stock, String autor, int paginas, String titulo, String descripcion, String fechaDePub, String categoria, String idioma) {
+        super(id, stock);
         this.autor = autor;
         this.paginas = paginas;
         this.titulo = titulo;
-        this.fecha = fecha;
+        this.descripcion = descripcion;
+        this.fechaDePub = fechaDePub;
+        this.categoria = categoria;
+        this.idioma = idioma;
     }
 
     public String getAutor() {
@@ -25,8 +32,8 @@ public class Libro {
         return titulo;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getFechaDePub() {
+        return fechaDePub;
     }
     
     

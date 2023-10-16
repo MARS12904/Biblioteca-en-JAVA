@@ -1,5 +1,7 @@
 package Componentes;
 
+import Clases.Usuario;
+
 public class NuevoUsuario extends javax.swing.JFrame {
 
     public NuevoUsuario() {
